@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8710E4E22C6BAD000692B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E4D22C6BAD000692B84 /* AppDelegate.swift */; };
+		E8710E5022C6BAD200692B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8710E4F22C6BAD200692B84 /* Assets.xcassets */; };
+		E8710E5322C6BAD200692B84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8710E5122C6BAD200692B84 /* MainMenu.xib */; };
+		E8710E6022C6BD1800692B84 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = E8710E5F22C6BD1800692B84 /* SwiftWebUI */; };
+		E8710E6622C6BDD800692B84 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6122C6BDD800692B84 /* OrderDetail.swift */; };
+		E8710E6722C6BDD800692B84 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6222C6BDD800692B84 /* Model.swift */; };
+		E8710E6822C6BDD800692B84 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6322C6BDD800692B84 /* MainPage.swift */; };
+		E8710E6922C6BDD800692B84 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6422C6BDD800692B84 /* OrderHistory.swift */; };
+		E8710E6A22C6BDD800692B84 /* OrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6522C6BDD800692B84 /* OrderPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8710E4A22C6BAD000692B84 /* AvocadoToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvocadoToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8710E4D22C6BAD000692B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8710E4F22C6BAD200692B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8710E5222C6BAD200692B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E8710E5422C6BAD200692B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8710E5522C6BAD200692B84 /* AvocadoToast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvocadoToast.entitlements; sourceTree = "<group>"; };
+		E8710E5B22C6BBD100692B84 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E8710E5C22C6BBD200692B84 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8710E5D22C6BBD200692B84 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		E8710E6122C6BDD800692B84 /* OrderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		E8710E6222C6BDD800692B84 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E8710E6322C6BDD800692B84 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		E8710E6422C6BDD800692B84 /* OrderHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
+		E8710E6522C6BDD800692B84 /* OrderPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8710E4722C6BAD000692B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8710E6022C6BD1800692B84 /* SwiftWebUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8710E4122C6BAD000692B84 = {
+			isa = PBXGroup;
+			children = (
+				E8710E5C22C6BBD200692B84 /* README.md */,
+				E8710E4C22C6BAD000692B84 /* AvocadoToast */,
+				E8710E5D22C6BBD200692B84 /* CONTRIBUTING.md */,
+				E8710E5B22C6BBD100692B84 /* LICENSE.txt */,
+				E8710E4B22C6BAD000692B84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8710E4B22C6BAD000692B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8710E4A22C6BAD000692B84 /* AvocadoToast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8710E4C22C6BAD000692B84 /* AvocadoToast */ = {
+			isa = PBXGroup;
+			children = (
+				E8710E6322C6BDD800692B84 /* MainPage.swift */,
+				E8710E6222C6BDD800692B84 /* Model.swift */,
+				E8710E6122C6BDD800692B84 /* OrderDetail.swift */,
+				E8710E6422C6BDD800692B84 /* OrderHistory.swift */,
+				E8710E6522C6BDD800692B84 /* OrderPage.swift */,
+				E8710E4D22C6BAD000692B84 /* AppDelegate.swift */,
+				E8710E4F22C6BAD200692B84 /* Assets.xcassets */,
+				E8710E5122C6BAD200692B84 /* MainMenu.xib */,
+				E8710E5422C6BAD200692B84 /* Info.plist */,
+				E8710E5522C6BAD200692B84 /* AvocadoToast.entitlements */,
+			);
+			path = AvocadoToast;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8710E4922C6BAD000692B84 /* AvocadoToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8710E5822C6BAD200692B84 /* Build configuration list for PBXNativeTarget "AvocadoToast" */;
+			buildPhases = (
+				E8710E4622C6BAD000692B84 /* Sources */,
+				E8710E4722C6BAD000692B84 /* Frameworks */,
+				E8710E4822C6BAD000692B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8710E6C22C6BE8600692B84 /* PBXTargetDependency */,
+			);
+			name = AvocadoToast;
+			packageProductDependencies = (
+				E8710E5F22C6BD1800692B84 /* SwiftWebUI */,
+			);
+			productName = AvocadoToast;
+			productReference = E8710E4A22C6BAD000692B84 /* AvocadoToast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8710E4222C6BAD000692B84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Helge Heß";
+				TargetAttributes = {
+					E8710E4922C6BAD000692B84 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = E8710E4522C6BAD000692B84 /* Build configuration list for PBXProject "AvocadoToast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8710E4122C6BAD000692B84;
+			packageReferences = (
+				E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
+			);
+			productRefGroup = E8710E4B22C6BAD000692B84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8710E4922C6BAD000692B84 /* AvocadoToast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8710E4822C6BAD000692B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8710E5022C6BAD200692B84 /* Assets.xcassets in Resources */,
+				E8710E5322C6BAD200692B84 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8710E4622C6BAD000692B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8710E6922C6BDD800692B84 /* OrderHistory.swift in Sources */,
+				E8710E6A22C6BDD800692B84 /* OrderPage.swift in Sources */,
+				E8710E6722C6BDD800692B84 /* Model.swift in Sources */,
+				E8710E6822C6BDD800692B84 /* MainPage.swift in Sources */,
+				E8710E4E22C6BAD000692B84 /* AppDelegate.swift in Sources */,
+				E8710E6622C6BDD800692B84 /* OrderDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8710E6C22C6BE8600692B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E8710E6B22C6BE8600692B84 /* SwiftWebUI */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8710E5122C6BAD200692B84 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8710E5222C6BAD200692B84 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8710E5622C6BAD200692B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8710E5722C6BAD200692B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E8710E5922C6BAD200692B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AvocadoToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.tests.swiftui.AvocadoToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8710E5A22C6BAD200692B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AvocadoToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.tests.swiftui.AvocadoToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8710E4522C6BAD000692B84 /* Build configuration list for PBXProject "AvocadoToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8710E5622C6BAD200692B84 /* Debug */,
+				E8710E5722C6BAD200692B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8710E5822C6BAD200692B84 /* Build configuration list for PBXNativeTarget "AvocadoToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8710E5922C6BAD200692B84 /* Debug */,
+				E8710E5A22C6BAD200692B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/helje5/SwiftWebUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8710E5F22C6BD1800692B84 /* SwiftWebUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
+			productName = SwiftWebUI;
+		};
+		E8710E6B22C6BE8600692B84 /* SwiftWebUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
+			productName = SwiftWebUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E8710E4222C6BAD000692B84 /* Project object */;
+}
