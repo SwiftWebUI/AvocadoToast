@@ -10,26 +10,32 @@ import SwiftWebUI
 
 struct OrderDetail: View {
   let order : CompletedOrder
-  
+
   var body: some View {
-    HStack {
+    VStack {
+      Text(order.summary).font(.title)
+
       VStack(alignment: .leading) {
-        Text(order.summary)
         Text(order.purchaseDate)
-          .font(.subheadline)
-          .foregroundColor(.secondary)
-      }
       
-      Spacer()
-      
-      if order.includeSalt {
-        SaltIcon()
+        HStack {
+          if order.includeSalt {
+            SaltIcon()
+          }
+          else {}
+          if order.includeRedPepperFlakes {
+            RedPepperFlakesIcon()
+          }
+          else {}
+        }
+        
+        Spacer()
+        
+        Image.unsplash(size  : UXSize(width: 480, height: 320),
+                       terms : order.summary
+                               .components(separatedBy: " ")
+                               .filter { $0 != "with" })
       }
-      else {}
-      if order.includeRedPepperFlakes {
-        RedPepperFlakesIcon()
-      }
-      else {}
     }
   }
 }

@@ -13,6 +13,8 @@ A small SwiftWebUI sample  based on the
 More details can be found on the related blog post at the
 [Always Right Institute](http://www.alwaysrightinstitute.com).
 
+<center><img src="http://zeezide.com/img/AvocadoToast.gif" /></center>
+
 ### Who
 
 Brought to you by
