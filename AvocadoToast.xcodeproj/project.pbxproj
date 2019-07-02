@@ -51,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				E8710E5C22C6BBD200692B84 /* README.md */,
+				E8DC6B6D22CBA9CA00ED5DA3 /* Sources */,
 				E8710E4C22C6BAD000692B84 /* AvocadoToast */,
 				E8710E5D22C6BBD200692B84 /* CONTRIBUTING.md */,
 				E8710E5B22C6BBD100692B84 /* LICENSE.txt */,
@@ -69,16 +70,31 @@
 		E8710E4C22C6BAD000692B84 /* AvocadoToast */ = {
 			isa = PBXGroup;
 			children = (
-				E8710E6322C6BDD800692B84 /* MainPage.swift */,
-				E8710E6222C6BDD800692B84 /* Model.swift */,
-				E8710E6122C6BDD800692B84 /* OrderDetail.swift */,
-				E8710E6422C6BDD800692B84 /* OrderHistory.swift */,
-				E8710E6522C6BDD800692B84 /* OrderPage.swift */,
 				E8710E4D22C6BAD000692B84 /* AppDelegate.swift */,
 				E8710E4F22C6BAD200692B84 /* Assets.xcassets */,
 				E8710E5122C6BAD200692B84 /* MainMenu.xib */,
 				E8710E5422C6BAD200692B84 /* Info.plist */,
 				E8710E5522C6BAD200692B84 /* AvocadoToast.entitlements */,
+			);
+			path = AvocadoToast;
+			sourceTree = "<group>";
+		};
+		E8DC6B6D22CBA9CA00ED5DA3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E8DC6B6E22CBA9E300ED5DA3 /* AvocadoToast */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E8DC6B6E22CBA9E300ED5DA3 /* AvocadoToast */ = {
+			isa = PBXGroup;
+			children = (
+				E8710E6322C6BDD800692B84 /* MainPage.swift */,
+				E8710E6222C6BDD800692B84 /* Model.swift */,
+				E8710E6122C6BDD800692B84 /* OrderDetail.swift */,
+				E8710E6422C6BDD800692B84 /* OrderHistory.swift */,
+				E8710E6522C6BDD800692B84 /* OrderPage.swift */,
 			);
 			path = AvocadoToast;
 			sourceTree = "<group>";
