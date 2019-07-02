@@ -1,5 +1,7 @@
 # Makefile
 
+TOOL_NAME=AvocadoToast
+
 # local config
 SWIFT_BUILD=swift build
 SWIFT_CLEAN=swift package clean
@@ -7,10 +9,10 @@ SWIFT_BUILD_DIR=.build
 
 # docker config
 SWIFT_BUILD_IMAGE="helje5/swift-dev:5.1.snap2019-07-01"
-CONFIGURATION=release
+CONFIGURATION=debug
 DOCKER_BUILD_DIR=".docker.build"
-SWIFT_DOCKER_BUILD_DIR="$(DOCKER_BUILD_DIR)/x86_64-unknown-linux/$(CONFIGURATION)"
-DOCKER_BUILD_PRODUCT="$(DOCKER_BUILD_DIR)/$(TOOL_NAME)"
+SWIFT_DOCKER_BUILD_DIR=$(DOCKER_BUILD_DIR)/x86_64-unknown-linux/$(CONFIGURATION)
+DOCKER_BUILD_PRODUCT="$(DOCKER_BUILD_DIR)/$(CONFIGURATION)/$(TOOL_NAME)"
 
 
 SWIFT_SOURCES=\
@@ -31,7 +33,7 @@ $(DOCKER_BUILD_PRODUCT): $(SWIFT_SOURCES)
           -v "$(PWD):/src" \
           -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
           "$(SWIFT_BUILD_IMAGE)" \
-          bash -c 'cd /src && swift build -c $(CONFIGURATION) && .build/x86_64-unknown-linux/$(CONFIGURATION)/$(TOOL_NAME)'
+          bash -c 'cd /src && swift build -c $(CONFIGURATION)'
 	ls -lah $(DOCKER_BUILD_PRODUCT)
 
 docker-all: $(DOCKER_BUILD_PRODUCT)
@@ -44,8 +46,17 @@ docker-distclean:
 
 distclean: clean docker-distclean
 
+docker-run:
+	docker run --rm -it -p "127.0.0.1:1337:1337" \
+		  --name AvocadoToast \
+	          -v "$(PWD):/src" \
+	          -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
+	          "$(SWIFT_BUILD_IMAGE)" \
+		  /src/$(SWIFT_BUILD_DIR)/x86_64-unknown-linux/$(CONFIGURATION)/$(TOOL_NAME)
+
 docker-emacs:
-	docker run --rm -it \
+	docker run --rm -p "127.0.0.1:1337:1337" \
+		  --name AvocadoToast \
 	          -v "$(PWD):/src" \
 	          -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
 	          "$(SWIFT_BUILD_IMAGE)" \

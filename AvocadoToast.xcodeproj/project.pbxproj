@@ -33,6 +33,7 @@
 		E8710E6322C6BDD800692B84 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		E8710E6422C6BDD800692B84 /* OrderHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 		E8710E6522C6BDD800692B84 /* OrderPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPage.swift; sourceTree = "<group>"; };
+		E8DC6B6F22CBB00A00ED5DA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		E8DC6B6E22CBA9E300ED5DA3 /* AvocadoToast */ = {
 			isa = PBXGroup;
 			children = (
+				E8DC6B6F22CBB00A00ED5DA3 /* main.swift */,
 				E8710E6322C6BDD800692B84 /* MainPage.swift */,
 				E8710E6222C6BDD800692B84 /* Model.swift */,
 				E8710E6122C6BDD800692B84 /* OrderDetail.swift */,
