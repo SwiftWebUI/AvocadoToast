@@ -73,4 +73,6 @@ Package.resolved
 
 .buildzz
 .DS_Store
+.docker.build
+*~
 
