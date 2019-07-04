@@ -386,7 +386,7 @@
 			repositoryURL = "https://github.com/helje5/SwiftWebUI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
