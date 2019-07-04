@@ -50,7 +50,7 @@ struct OrderPage: View {
         }
       }
       Section {
-        Button(submitOrder) {
+        Button(action: submitOrder) {
           Text("🍞")
           Text("Order")
         }

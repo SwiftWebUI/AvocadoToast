@@ -45,7 +45,7 @@ struct OrderHistory: View {
   var body: some View {
     NavigationView(emptyView: OrderDetail(order: previousOrders[0])) {
       List(previousOrders) { order in
-        NavigationButton(destination: OrderDetail(order: order)) {
+        NavigationLink(destination: OrderDetail(order: order)) {
           OrderCell(order: order)
         }
       }
