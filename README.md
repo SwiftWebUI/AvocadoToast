@@ -5,6 +5,8 @@
 
 ![Swift5.1](https://img.shields.io/badge/swift-5.1-blue.svg)
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
+![tuxOS](https://img.shields.io/badge/os-tuxOS-orange.svg?style=flat)
+![Travis](https://api.travis-ci.org/SwiftWebUI/AvocadoToast.svg?branch=master&style=flat)
 
 A small SwiftWebUI sample  based on the 
 [SwiftUI Essentials](https://developer.apple.com/videos/play/wwdc2019/216)
