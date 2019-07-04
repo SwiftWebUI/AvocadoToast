@@ -55,7 +55,7 @@ docker-run:
 		  /src/$(SWIFT_BUILD_DIR)/x86_64-unknown-linux/$(CONFIGURATION)/$(TOOL_NAME)
 
 docker-emacs:
-	docker run --rm -p "127.0.0.1:1337:1337" \
+	docker run --rm -it -p "127.0.0.1:1337:1337" \
 		  --name AvocadoToast \
 	          -v "$(PWD):/src" \
 	          -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
