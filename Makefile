@@ -48,7 +48,7 @@ distclean: clean docker-distclean
 
 docker-run:
 	docker run --rm -it -p "127.0.0.1:1337:1337" \
-		  --name AvocadoToast \
+		  --name $(TOOL_NAME) \
 	          -v "$(PWD):/src" \
 	          -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
 	          "$(SWIFT_BUILD_IMAGE)" \
@@ -56,7 +56,7 @@ docker-run:
 
 docker-emacs:
 	docker run --rm -it -p "127.0.0.1:1337:1337" \
-		  --name AvocadoToast \
+		  --name $(TOOL_NAME) \
 	          -v "$(PWD):/src" \
 	          -v "$(PWD)/$(DOCKER_BUILD_DIR):/src/.build" \
 	          "$(SWIFT_BUILD_IMAGE)" \
