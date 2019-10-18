@@ -11,7 +11,7 @@ import SwiftWebUI
 struct MainPage: View {
   
   var body: some View {
-    TabbedView {
+    TabView {
       
       OrderPage()
         .tabItem(Text("Order"))

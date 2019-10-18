@@ -12,7 +12,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/SwiftWebUI/SwiftWebUI.git",
-             from: "0.1.10")
+             from: "0.2.1")
   ],
   targets: [
     .target(name: "AvocadoToast", dependencies: [ "SwiftWebUI" ])
