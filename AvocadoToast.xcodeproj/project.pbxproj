@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E8710E4E22C6BAD000692B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E4D22C6BAD000692B84 /* AppDelegate.swift */; };
 		E8710E5022C6BAD200692B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8710E4F22C6BAD200692B84 /* Assets.xcassets */; };
 		E8710E5322C6BAD200692B84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8710E5122C6BAD200692B84 /* MainMenu.xib */; };
-		E8710E6022C6BD1800692B84 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = E8710E5F22C6BD1800692B84 /* SwiftWebUI */; };
 		E8710E6622C6BDD800692B84 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6122C6BDD800692B84 /* OrderDetail.swift */; };
 		E8710E6722C6BDD800692B84 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6222C6BDD800692B84 /* Model.swift */; };
 		E8710E6822C6BDD800692B84 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6322C6BDD800692B84 /* MainPage.swift */; };
 		E8710E6922C6BDD800692B84 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6422C6BDD800692B84 /* OrderHistory.swift */; };
 		E8710E6A22C6BDD800692B84 /* OrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8710E6522C6BDD800692B84 /* OrderPage.swift */; };
+		E896D2C72B6E7A21008FF8C8 /* SwiftWebUI in Frameworks */ = {isa = PBXBuildFile; productRef = E896D2C62B6E7A21008FF8C8 /* SwiftWebUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8710E6022C6BD1800692B84 /* SwiftWebUI in Frameworks */,
+				E896D2C72B6E7A21008FF8C8 /* SwiftWebUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 			);
 			name = AvocadoToast;
 			packageProductDependencies = (
-				E8710E5F22C6BD1800692B84 /* SwiftWebUI */,
+				E896D2C62B6E7A21008FF8C8 /* SwiftWebUI */,
 			);
 			productName = AvocadoToast;
 			productReference = E8710E4A22C6BAD000692B84 /* AvocadoToast.app */;
@@ -131,8 +131,9 @@
 		E8710E4222C6BAD000692B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Helge Heß";
 				TargetAttributes = {
 					E8710E4922C6BAD000692B84 = {
@@ -150,7 +151,7 @@
 			);
 			mainGroup = E8710E4122C6BAD000692B84;
 			packageReferences = (
-				E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
+				E896D2C52B6E7A21008FF8C8 /* XCRemoteSwiftPackageReference "SwiftWebUI" */,
 			);
 			productRefGroup = E8710E4B22C6BAD000692B84 /* Products */;
 			projectDirPath = "";
@@ -234,6 +235,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -241,9 +243,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,6 +298,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -301,9 +306,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -328,6 +335,7 @@
 				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = AvocadoToast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -346,6 +354,7 @@
 				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				INFOPLIST_FILE = AvocadoToast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,20 +395,28 @@
 			repositoryURL = "https://github.com/helje5/SwiftWebUI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
+				minimumVersion = 0.3.2;
+			};
+		};
+		E896D2C52B6E7A21008FF8C8 /* XCRemoteSwiftPackageReference "SwiftWebUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftWebUI/SwiftWebUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E8710E5F22C6BD1800692B84 /* SwiftWebUI */ = {
+		E8710E6B22C6BE8600692B84 /* SwiftWebUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
 			productName = SwiftWebUI;
 		};
-		E8710E6B22C6BE8600692B84 /* SwiftWebUI */ = {
+		E896D2C62B6E7A21008FF8C8 /* SwiftWebUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8710E5E22C6BD1800692B84 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
+			package = E896D2C52B6E7A21008FF8C8 /* XCRemoteSwiftPackageReference "SwiftWebUI" */;
 			productName = SwiftWebUI;
 		};
 /* End XCSwiftPackageProductDependency section */
