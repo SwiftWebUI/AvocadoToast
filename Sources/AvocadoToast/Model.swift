@@ -3,10 +3,8 @@
 //  AvocadoToast
 //
 //  Created by Helge Heß on 28.06.19.
-//  Copyright © 2019 ZeeZide GmbH. All rights reserved.
+//  Copyright © 2019-2024 ZeeZide GmbH. All rights reserved.
 //
-
-import protocol SwiftWebUI.Identifiable
 
 struct Order {
   var includeSalt            = false
@@ -18,9 +16,9 @@ struct Order {
 }
 
 struct CompletedOrder: Identifiable {
-  var id           : Int
-  var summary      : String
-  var purchaseDate : String
+  var id                     : Int
+  var summary                : String
+  var purchaseDate           : String
   var includeSalt            = false
   var includeRedPepperFlakes = false
 }
@@ -34,6 +32,7 @@ enum BreadType: CaseIterable, Hashable, Identifiable {
   case wheat, white, rhy
   
   var name: String { return "\(self)".capitalized }
+  var id : Self { self }
 }
 
 enum Spread: CaseIterable, Hashable, Identifiable {
@@ -47,6 +46,7 @@ enum Spread: CaseIterable, Hashable, Identifiable {
     return "\(self)".map { $0.isUppercase ? " \($0)" : "\($0)" }
       .joined().capitalized
   }
+  var id : Self { self }
 }
 
 let previousOrders : [ CompletedOrder ] = [
