@@ -40,11 +40,11 @@ struct OrderCell: View {
 }
 
 struct OrderHistory: View {
-  let previousOrders : [ CompletedOrder ]
+  @EnvironmentObject var store : OrderStore
   
   var body: some View {
-    NavigationView(emptyView: OrderDetail(order: previousOrders[0])) {
-      List(previousOrders) { order in
+    NavigationView(emptyView: OrderDetail(order: store.completedOrders[0])) {
+      List(store.completedOrders) { order in
         NavigationLink(destination: OrderDetail(order: order)) {
           OrderCell(order: order)
         }

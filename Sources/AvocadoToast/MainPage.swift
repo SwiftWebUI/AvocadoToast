@@ -10,17 +10,22 @@ import SwiftWebUI
 
 struct MainPage: View {
   
+  /// One store per `MainPage`, i.e. per session when the page is created
+  /// in the `serve` closure.
+  let store = OrderStore()
+  
   var body: some View {
     TabView {
       
       OrderPage()
         .tabItem(Text("Order"))
       
-      OrderHistory(previousOrders: previousOrders)
+      OrderHistory()
         .tabItem(Text("History"))
     }
     .padding()
     .relativeWidth(0.95)
     .relativeHeight(0.95)
+    .environmentObject(store)
   }
 }

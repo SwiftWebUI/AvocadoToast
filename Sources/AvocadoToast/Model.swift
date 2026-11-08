@@ -6,13 +6,63 @@
 //  Copyright © 2019-2024 ZeeZide GmbH. All rights reserved.
 //
 
+import Foundation
+import SwiftWebUI
+// Foundation re-exports Combine on Apple platforms, which brings in its own
+// `ObservableObject`. The scoped import makes SwiftWebUI's take precedence.
+import protocol SwiftWebUI.ObservableObject
+#if canImport(Combine)
+  import class Combine.PassthroughSubject
+#elseif canImport(OpenCombine)
+  import class OpenCombine.PassthroughSubject
+#endif
+
 struct Order {
   var includeSalt            = false
   var includeRedPepperFlakes = false
-  var quantity               = 0
+  var quantity               = 1
   var avocadoStyle           = AvocadoStyle.sliced
   var spread                 = Spread.none
   var breadType              = BreadType.wheat
+
+  /// E.g. "Rye with Almond Butter" or "Wheat Toast", like the sample orders.
+  var summary : String {
+    let base = spread == .none
+      ? "\(breadType.name) Toast"
+      : "\(breadType.name) with \(spread.name)"
+    return quantity > 1 ? "\(quantity)× \(base)" : base
+  }
+}
+
+/// Holds the completed orders of a session. Views observe it using
+/// `@EnvironmentObject`, `submitOrder` on the order page appends to it.
+final class OrderStore: ObservableObject {
+
+  let didChange = PassthroughSubject<Void, Never>()
+
+  private(set) var completedOrders : [ CompletedOrder ] {
+    didSet { didChange.send(()) }
+  }
+
+  init(completedOrders: [ CompletedOrder ] = previousOrders) {
+    self.completedOrders = completedOrders
+  }
+
+  func complete(_ order: Order) {
+    let nextID = (completedOrders.map { $0.id }.max() ?? 0) + 1
+    let completed = CompletedOrder(
+      id: nextID, summary: order.summary, purchaseDate: Self.today(),
+      includeSalt: order.includeSalt,
+      includeRedPepperFlakes: order.includeRedPepperFlakes
+    )
+    completedOrders.append(completed)
+  }
+
+  private static func today() -> String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter.string(from: Date())
+  }
 }
 
 struct CompletedOrder: Identifiable {

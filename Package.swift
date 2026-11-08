@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -12,9 +12,9 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/SwiftWebUI/SwiftWebUI.git",
-             from: "0.3.2")
+             from: "0.4.1")
   ],
   targets: [
-    .target(name: "AvocadoToast", dependencies: [ "SwiftWebUI" ])
+    .executableTarget(name: "AvocadoToast", dependencies: [ "SwiftWebUI" ])
   ]
 )

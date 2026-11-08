@@ -10,9 +10,12 @@ import SwiftWebUI
 
 struct OrderPage: View {
   
+  @EnvironmentObject var store : OrderStore
   @State var order = Order()
   
   func submitOrder() {
+    store.complete(order)
+    order = Order() // reset the form
   }
   
   var body: some View {
